@@ -107,8 +107,7 @@ public function addrec(ManagerRegistry $doctrine, Request $request): Response
     if($form->isSubmitted() && $form->isValid())
     {
          
-             //$accountSid = 'ACd242f744e7942d6fea0350871095248f';
-            // $authToken = 'c82ddc2731c5f5bcd10d2c14d6f3fcad';
+            
              $client = new Client($accountSid, $authToken);
      
              $message = $client->messages->create(
